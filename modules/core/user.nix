@@ -18,6 +18,15 @@
     };
   };
 
+  virtualisation.docker = {
+    enable = true;
+    enableOnBoot = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
   stylix.enable = true;
   stylix.image = ./nixos.png;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
@@ -41,7 +50,7 @@
   users.users.${username} = {
     isNormalUser = true;
     description = "${username}";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     shell = pkgs.zsh;
   };
   nix.settings.allowed-users = [ "${username}" ];

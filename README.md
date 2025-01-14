@@ -9,3 +9,5 @@ Configure the starship
 cp Desktop/dotfile/.dotfiles/starship.toml ~/.config/starship.toml
 
 add all of the extensions to brave, set bookmarks to always, disable buttons for leo ai, rewards button, wallet, sidebar, search engine should be google
+
+install microk8s if possible using nix-snapd package

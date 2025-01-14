@@ -16,7 +16,8 @@ in
     nautilus                          # file manager
     nitch                             # systhem fetch util
     eza                               # ls replacement
-    fd                                # find replacement
+    fd  
+    htop                              # find replacement
     ripgrep                           # grep replacement
     inputs.alejandra.defaultPackage.${system}
 
@@ -29,6 +30,7 @@ in
     minikube
     lens                              # Kubernetes IDE
     rancher                           # Kubernetes management
+    devbox                            # Nix like program for development
     # mpv                             # Video player 
     # notion
 

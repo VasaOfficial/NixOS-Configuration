@@ -60,10 +60,10 @@
           (import ./hosts/desktop)
           inputs.stylix.nixosModules.stylix
           {
-          environment.systemPackages = [
-            ghostty.packages.x86_64-linux.default
-          ];
-        }
+            environment.systemPackages = [
+              ghostty.packages.x86_64-linux.default
+            ];
+          }
         ];
         specialArgs = { host="desktop"; inherit self inputs username ; };
       };
