@@ -23,13 +23,14 @@ in
 
     docker                            # Docker CLI
     docker-compose                    # Docker Compose
-    terraform                         # Infrastructure as code tool                              # Lightweight Kubernetes
+    terraform                         # Infrastructure as code tool
     k9s                               # Kubernetes terminal UI
+    # helm and helmfile
+    lazydocker
     nodejs                            # Node.js runtime
     awscli                            # AWS CLI
     minikube
     lens                              # Kubernetes IDE
-    rancher                           # Kubernetes management
     devbox                            # Nix like program for development
     # mpv                             # Video player 
     # notion
